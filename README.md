@@ -1,6 +1,6 @@
 ## Contact
 
-assets/profile.jpg
+!assets/profile.jpg
 
 - Email: ...
 - LinkedIn: ...
