@@ -14,4 +14,4 @@ assets/profile.jpg
 
 assets/poster_thumbnail.jpg
 
-[![Poster Preview](assets/poster_ts/CamiPosterA0FinalCatCat.pdf)
+![Poster Preview](assets/CamiPosterA0FinalCatCat.pdf)
