@@ -14,4 +14,4 @@
 
 assets/poster_thumbnail.jpg
 
-assets/CamiPosterA0FinalCatCat.pdf
+[![Poster Preview](assets/poster_ts/CamiPosterA0FinalCatCat.pdf)
