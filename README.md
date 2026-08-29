@@ -1,6 +1,6 @@
 ## Contact
 
-assets/profile.png
+assets/profile.jpg
 
 - Email: ...
 - LinkedIn: ...
@@ -14,4 +14,4 @@ assets/profile.png
 
 assets/poster_thumbnail.jpg
 
-assets/poster.pdf
+assets/CamiPosterA0FinalCatCat.pdf
