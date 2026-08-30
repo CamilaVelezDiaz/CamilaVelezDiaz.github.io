@@ -1,181 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camila Velez | Marine Scientist</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<title>AMSA 2026 | Camila Velez</title>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+        }
 
-<style>
+        /* Header/Profile Section */
+        .header {
+            background: linear-gradient(135deg, #005f73 0%, #0a8f9c 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
 
-body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f4f8fb;
-    color:#333333;
-}
+        .header-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
 
-.hero{
-    background:linear-gradient(135deg,#0b73ba,#4bb3fd);
-    color:white;
-    text-align:center;
-    padding:60px 20px;
-}
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
 
-.profile-photo{
-    width:180px;
-    height:180px;
-    border-radius:50%;
-    object-fit:cover;
-    border:5px solid white;
-    margin-bottom:20px;
-}
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
 
-.hero h1{
-    margin:10px 0;
-}
+        .subtitle {
+            font-size: 1.1em;
+            opacity: 0.95;
+            margin-bottom: 15px;
+        }
 
-.hero p{
-    margin:5px 0;
-}
+        .research-areas {
+            font-size: 0.95em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
 
-.container{
-    max-width:1100px;
-    margin:auto;
-    padding:40px 20px;
-}
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
 
-.section{
-    margin-bottom:60px;
-}
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s;
+            font-size: 0.95em;
+        }
 
-.section h2{
-    color:#0b73ba;
-    margin-bottom:20px;
-}
+        .social-links a:hover {
+            border-bottom-color: white;
+        }
 
-.poster{
-    text-align:center;
-}
+        /* Main Content */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
 
-.poster img{
-    width:100%;
-    max-width:800px;
-    border:1px solid #cccccc;
-    box-shadow:0 2px 10px rgba(0,0,0,0.15);
-}
+        .section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+        }
 
-.button{
-    display:inline-block;
-    margin:10px;
-    padding:12px 24px;
-    background:#0b73ba;
-    color:white;
-    text-decoration:none;
-    border-radius:6px;
-    font-weight:bold;
-}
+        .section h2 {
+            color: #005f73;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #0a8f9c;
+            display: inline-block;
+        }
 
-.button:hover{
-    background:#085b93;
-}
+        .section h3 {
+            color: #005f73;
+            font-size: 1.15em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
 
-.interests{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-}
+        /* Research Poster Section */
+        .poster-container {
+            text-align: center;
+        }
 
-.interest{
-    background:white;
-    padding:12px 18px;
-    border-radius:8px;
-    border:1px solid #d8d8d8;
-}
+        .poster-thumbnail {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
 
-.contact{
-    text-align:center;
-}
+        .poster-thumbnail:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
 
-.contact a{
-    color:#0b73ba;
-    text-decoration:none;
-    font-weight:bold;
-    margin:0 10px;
-}
+        .button-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
-.footer{
-    text-align:center;
-    padding:30px;
-    font-size:0.9em;
-    color:#666666;
-}
+        .button {
+            display: inline-block;
+            padding: 12px 28px;
+            background: #005f73;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s, transform 0.2s;
+            border: 2px solid #005f73;
+            font-weight: 500;
+        }
 
-</style>
+        .button:hover {
+            background: #004858;
+            transform: translateY(-2px);
+        }
 
+        .button.secondary {
+            background: transparent;
+            color: #005f73;
+        }
+
+        .button.secondary:hover {
+            background: #f0f0f0;
+        }
+
+        /* Research Interests List */
+        .research-interests {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .research-interests li {
+            list-style: none;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .research-interests li:before {
+            content: "•";
+            color: #0a8f9c;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Typography */
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header {
+                padding: 40px 20px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .button {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="hero">
-
-assets/profile.jpg
-
-<h1>Camila Velez</h1>
-
-<p>MSc Candidate | James Cook University</p>
-
-<p>
-Marine Biodiversity • Museum Collections • Biodiversity Informatics
-</p>
-
+<!-- Header/Profile Section -->
+<div class="header">
+    <div class="header-content">
+        <img src="assets/profile.jpg" alt="Camila Velez" class="profile-image">
+        <h1>Camila Velez</h1>
+        <div class="subtitle">
+            MSc Candidate, James Cook University
+        </div>
+        <div class="research-areas">
+            Marine Biodiversity • Museum Collections • Biodiversity Informatics
+        </div>
+        <div class="social-links">
+            <a href="https://orcid.org/0000-0003-4180-1077" target="_blank">ORCID</a>
+            <a href="https://www.linkedin.com/in/cami-velez" target="_blank">LinkedIn</a>
+            <a href="https://github.com/CamilaVelezDiaz" target="_blank">GitHub</a>
+        </div>
+    </div>
 </div>
 
+<!-- Main Content -->
 <div class="container">
 
-<div class="section">
+    <!-- Research Project Section -->
+    <div class="section">
+        <h2>AMSA 2026</h2>
+        <h3>Taxonomic Assessment and Biodiversity Analysis of Historical Deep-Sea and Cross-Shelf Collections from Queensland Waters</h3>
+        <p>
+            Queensland museum collections contain thousands of deep-sea echinoderm specimens that remain unresolved to species level. This work integrates museum and biodiversity databases to identify taxonomic gaps and assess conservation priorities for these poorly understood deep-sea communities.
+        </p>
 
-<h2>AMSA 2026</h2>
+        <div class="poster-container">
+            <a href="assets/CamiPosterA0FinalCatCat.pdf" target="_blank">
+                <img src="assets/poster_thumbnail.jpg" alt="AMSA 2026 Poster - Click to view full PDF" class="poster-thumbnail">
+            </a>
+            <div class="button-group">
+                <a href="assets/CamiPosterA0FinalCatCat.pdf" class="button" target="_blank" download>Download Poster PDF</a>
+            </div>
+        </div>
+    </div>
 
-<h3>
-Taxonomic Assessment and Biodiversity Analysis of Historical Deep-Sea and Cross-Shelf Collections from Queensland Waters
-</h3>
+    <!-- Research Interests Section -->
+    <div class="section">
+        <h2>Research Interests</h2>
+        <ul class="research-interests">
+            <li>Museum collections and specimen curation</li>
+            <li>Echinoderm biodiversity and taxonomy</li>
+            <li>Marine biodiversity informatics</li>
+            <li>Deep-sea ecosystems and biodiversity</li>
+            <li>Historical biodiversity datasets</li>
+        </ul>
+    </div>
 
-<p>
-Queensland museum collections contain thousands of deep-sea echinoderm specimens that remain unresolved to species level. This research integrates museum collections and biodiversity databases to identify taxonomic knowledge gaps across depth gradients in Northeast Australia and improve understanding of marine biodiversity patterns.
-</p>
+    <!-- Collaborations Section -->
+    <div class="section">
+        <h2>Collaborations</h2>
+        <p>
+            I'm interested in collaborating on projects involving museum collections, marine biodiversity assessment, taxonomy, ecological data integration, and long-term biodiversity change analysis. If you're working on related topics, please don't hesitate to reach out.
+        </p>
+        <div class="button-group">
+            <a href="mailto:mariacamila.velezdiaz@my.jcu.edu.au" class="button secondary">Get in Touch</a>
+        </div>
+    </div>
 
 </div>
 
-<div class="section poster">
-
-<h2>Conference Poster</h2>
-
-<a href="assets/CamiPosterA0FinalCatCat.pdf" target="_blank">
-
-assets/poster_thumbnail.jpg
-
-</a>
-
-<br>
-
-<a class="button" href="assets/CamiPosterA0FinalCatCat.pdf" target="_blank">
-View Poster
-</a>
-
-<a class="button" href="assets/CamiPosterA0FinalCatCat.pdf" target="_blank">
-Download PDF
-</a>
-
-</div>
-
-<div class="section">
-
-<h2>Research Interests</h2>
-
-<div class="interests">
-
-<div class="interest">Museum Collections</div>
-<div class="interest">Echinoderm Biodiversity</div>
-<div class="interest">Marine Biodiversity
+</body>
+</html>
