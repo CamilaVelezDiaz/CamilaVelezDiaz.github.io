@@ -3,9 +3,9 @@
 assets/profile.jpg
 
 - Email: mariacamila.velezdiaz@my.jcu.edu.au
-- LinkedIn: [...](https://www.linkedin.com/in/cami-velez/)
-- ORCID: [...](https://orcid.org/0000-0003-4180-1077)
-- GitHub: [...](https://github.com/CamilaVelezDiaz)
+- [LinkedIn](https://www.linkedin.com/in/cami-velez/)
+- [ORCID](https://orcid.org/0000-0003-4180-1077)
+- [GitHub](https://github.com/CamilaVelezDiaz)
 
   
 # AMSA 2026
